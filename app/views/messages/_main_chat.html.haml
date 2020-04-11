@@ -1,0 +1,31 @@
+.main
+  .main__header
+    .main__header__group
+      .main__header__group--logo
+        test
+      .main__header__group--member
+        Member : masa
+    = link_to "Edit","#", class: "main__header__edit"
+  .main__message
+    .main__message__box
+      .main__message__box--name
+        masa
+      .main__message__box--date
+        2019/11/20(Wed) 17:43:01
+    .main__message--message
+      おはよう！
+    .main__message__box
+      .main__message__box--name
+        masa
+      .main__message__box--date
+        2019/11/20(Wed) 17:43:34
+    .main__message--message
+      今日は夜から雨
+  .main__form
+    .main__form__input
+      %input{type: "text", placeholder: "type a message", class: "main__form__input--text"}
+      .main__form__input--box
+        %label
+          = icon("fas", "image", class: "main__form__input--box--img")
+          %input{type: "file", class: "main__form__input--box--file"}
+    = link_to "Send", "#", class: "main__form--btn"
