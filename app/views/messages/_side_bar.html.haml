@@ -2,11 +2,11 @@
   .side__header
     .side__header__box
       .side__header__box--name
-        masa
+        = current_user.name
       .side__header__box__icons
         = link_to "#" do
           = icon("fa", "edit", class: "side__header__box__icons--edit")
-        = link_to "#" do
+        = link_to edit_user_path(current_user) do
           = icon("fa", "cog", class: "side__header__box__icons--cog")
   .side__groupList
     .side__groupList--name
